@@ -48,3 +48,10 @@ If you ever want to revert all shortcuts back to factory settings:
 dconf reset -f /org/gnome/desktop/wm/keybindings/
 dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/
 ```
+
+### Restore Input Remapper 2
+```bash
+rm -rf ~/.config/input-remapper-2
+ln -s ~/dotfiles/ubuntu/input-remapper-2 ~/.config/input-remapper-2
+sudo systemctl restart input-remapper
+```
